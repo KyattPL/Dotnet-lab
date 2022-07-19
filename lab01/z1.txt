@@ -1,0 +1,3 @@
+curl -i freeonlineflashlight.com
+
+curl -i https://freeonlineflashlight.com

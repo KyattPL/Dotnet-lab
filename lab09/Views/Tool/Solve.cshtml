@@ -1,0 +1,13 @@
+<div class="card col" style="width: 30rem; border-color: @ViewBag.color">
+    <div class="card-header">
+        <h5 class="card-title fs-1">Solutions</h5>
+        <h6 class="card-subtitle fs-3 mb-2 text-muted">Given a=@ViewBag.a b=@ViewBag.b c=@ViewBag.c</h6>
+    </div>
+    <div class="card-body row align-items-center">
+        @foreach (var solution in ViewBag.sols)
+        {
+            <p class="card-text fs-4 text-center" style="color: @ViewBag.color">@solution</p>
+        }
+        <p class="card-text fs-4" style="color: @ViewBag.color">@ViewBag.solText</p>
+    </div>
+</div>

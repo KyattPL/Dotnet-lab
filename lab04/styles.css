@@ -1,0 +1,18 @@
+.even {
+    text-align: right;
+    background-color: bisque;
+    border: 2px solid brown;
+}
+
+.odd {
+    text-align: right;
+    background-color: aqua;
+    border: 2px solid brown;
+}
+
+th {
+    background-color: yellow;
+    text-align: right;
+    border: 2px solid brown;
+    min-width: 34px;
+}

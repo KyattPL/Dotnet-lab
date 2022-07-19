@@ -1,0 +1,103 @@
+﻿@model lab10.Models.CustomerInfo
+@using System.Globalization;
+
+@{
+    ViewData["Title"] = "Order";
+    int index = 0;
+}
+
+@if (ViewBag.Articles.Count != 0) {
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Picture
+            </th>
+            <th>
+                Category
+            </th>
+            <th>
+                Count
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var article in ViewBag.Articles) 
+    {
+        <tr class="table">
+            <td>
+                <div>@article.Name</div>
+            </td>
+            <td>
+                <div>$@article.Price.ToString(new CultureInfo("en-US"))</div>
+            </td>
+            <td>
+                <img src="@article.Picture" alt="Image" width="30px" height="30px"/>
+            </td>
+            <td>
+                <div>@article.Category.Name</div>
+            </td>
+            <td>
+                <div>@ViewBag.ArtCounts[@index]</div>
+            </td>
+        </tr>
+        index += 1;
+        }
+        <tr class="table">
+            <td>
+                Sum: $@ViewBag.Total.ToString(new CultureInfo("en-US"))
+            </td>
+        </tr>
+    </tbody>
+</table>
+}
+
+<form asp-action="OrderArticles" asp-controller="Basket">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="form-group">
+        <label asp-for="FirstName" class="control-label">First name</label>
+        <input asp-for="FirstName" class="form-control" />
+        <span asp-validation-for="FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName" class="control-label">Last name</label>
+        <input asp-for="LastName" class="form-control" />
+        <span asp-validation-for="LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="FirstAddress" class="control-label">Address 1</label>
+        <input asp-for="FirstAddress" class="form-control" />
+        <span asp-validation-for="FirstAddress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="SecondAddress" class="control-label">Address 2</label>
+        <input asp-for="SecondAddress" class="form-control" />
+        <span asp-validation-for="SecondAddress" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber" class="control-label">Phone number</label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="PaymentMethod" class="control-label">Payment method</label>
+        <select asp-for="PaymentMethod" class="form-select">
+            <option selected value="">Select payment method</option>
+            <option value="Credit Card">Credit Card</option>
+            <option value="Debit Card">Debit Card</option>
+            <option value="PayPal">PayPal</option>
+            <option value="Bank transfer">Bank transfer</option>
+            <option value="Mobile payment">Mobile payment</option>
+        </select>
+        <span asp-validation-for="PaymentMethod" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Create" class="btn btn-primary" />
+    </div>
+</form>

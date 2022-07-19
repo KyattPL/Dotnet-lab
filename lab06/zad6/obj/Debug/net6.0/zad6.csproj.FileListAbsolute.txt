@@ -1,0 +1,15 @@
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.csproj.AssemblyReference.cache
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.GeneratedMSBuildEditorConfig.editorconfig
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.AssemblyInfoInputs.cache
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.AssemblyInfo.cs
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.csproj.CoreCompileInputs.cache
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/bin/Debug/net6.0/zad6
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/bin/Debug/net6.0/zad6.deps.json
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/bin/Debug/net6.0/zad6.runtimeconfig.json
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/bin/Debug/net6.0/zad6.dll
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/bin/Debug/net6.0/ref/zad6.dll
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/bin/Debug/net6.0/zad6.pdb
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.dll
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/ref/zad6.dll
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.pdb
+/home/kyatt/Desktop/uczelnia/dotnet/lab/lab06/zad6/obj/Debug/net6.0/zad6.genruntimeconfig.cache

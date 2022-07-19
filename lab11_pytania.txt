@@ -1,0 +1,3 @@
+3b. Można, wystarczy wysłać init request, który pobiera zawartość ciasteczek a potem resztę wykonujemy u siebie lokalnie. Można nawet bawić się w localStorage czy sessionStorage żeby pozorować pamiętanie danych. Będzie to oczywiście tylko działać po stronie klienta i nastąpi niespójność z danymi serwerowymi.
+
+Pytanie: Operacje na towarach/kategoriach powoduje zmianę pewnych danych po stronie serwera, które muszą pozostać spójne. Operacje na koszyku wykorzystują ciasteczka jako de facto bazę danych (do przechowywania artykułów i ich liczności) - w tym przypadku natomiast użytkownik może zmodyfikować dane (np. usuwając ciasteczka) co nie spowoduje niespójności, ponieważ koszyk jest budowany na podstawie ciasteczek w żądaniu (nie modyfikujemy wartości z bazy danych).

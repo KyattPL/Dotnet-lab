@@ -1,0 +1,66 @@
+﻿@model lab10.Models.ArticleCreateViewModel
+@using System.Globalization;
+
+@{
+    ViewData["Title"] = "Basket";
+    int index = 0;
+}
+
+@if (ViewBag.Articles.Count != 0) {
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Picture)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Category)
+            </th>
+            <th>
+                Count
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var article in ViewBag.Articles) 
+    {
+        <tr class="table">
+            <td>
+                <div>@article.Name</div>
+            </td>
+            <td>
+                <div>$@article.Price.ToString(new CultureInfo("en-US"))</div>
+            </td>
+            <td>
+                <img src="@article.Picture" alt="Image" width="30px" height="30px"/>
+            </td>
+            <td>
+                <div>@article.Category.Name</div>
+            </td>
+            <td>
+                <div>@ViewBag.ArtCounts[@index]</div>
+            </td>
+            <td>
+                <button class="btn btn-success" type="button" onclick="location.href='@Url.Action("AddArticle", "Basket", new { id = @ViewBag.OrderedKeys[index]})'">+</button>
+                <button class="btn btn-danger" type="button" onclick="location.href='@Url.Action("TakeArticle", "Basket", new { id = @ViewBag.OrderedKeys[index]})'">-</button>
+                <button class="btn btn-warning" type="button" onclick="location.href='@Url.Action("RemoveArticle", "Basket", new { id = @ViewBag.OrderedKeys[index]})'">Remove</button>
+            </td>
+        </tr>
+        index += 1;
+    }
+        <tr class="table">
+            <td>
+                Sum: $@ViewBag.Total.ToString(new CultureInfo("en-US"))
+            </td>
+        </tr>
+    </tbody>
+</table>
+} else {
+    <h1>No articles in the basket!</h1>
+}

@@ -1,0 +1,36 @@
+﻿@page
+@model Lab12.Pages.Category.IndexModel;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-area="" asp-page="/Category/Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model.categories) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Name)
+            </td>
+            <td>
+                <a asp-page="/Category/Edit" asp-route-id="@item.Id">Edit</a> |
+                <a asp-page="/Category/Details" asp-route-id="@item.Id">Details</a> |
+                <a asp-page="/Category/Delete" asp-route-id="@item.Id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

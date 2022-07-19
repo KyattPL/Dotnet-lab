@@ -1,0 +1,83 @@
+﻿@page
+@model Lab12.Pages.Shop.IndexModel;
+@using System.Globalization;
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+
+@foreach(var category in Model.Categories)
+{
+    <style>
+        .cat-@category.Id {
+            display: none
+        }
+    </style>
+}
+
+<h1>Index</h1>
+
+<select class="form-select" id="selectCategory" onchange="onCategoryChange()">
+    <option selected value="">Select category</option>
+    @foreach (var category in Model.Categories)
+    {
+        <option value="@category.Id">@category.Name</option>
+    }
+</select>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Price
+            </th>
+            <th>
+                Picture
+            </th>
+            <th>
+                Category
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+    @foreach (var article in Model.Articles) 
+    {
+        <tr class="cat-@article.Category.Id">
+            <td>
+                <div>@article.Name</div>
+            </td>
+            <td>
+                <div>$@article.Price.ToString(new CultureInfo("en-US"))</div>
+            </td>
+            <td>
+                <img src="@article.Picture" alt="Image" width="30px" height="30px"/>
+            </td>
+            <td>
+                <div>@article.Category.Name</div>
+            </td>
+            <td>
+                <a asp-page="/Article/Details" asp-route-id="@article.Id">Details</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>
+
+@section Scripts {
+<script>
+    let currCat = 0;
+
+    const onCategoryChange = function (event) {
+        let temp = document.getElementById("selectCategory").value;
+        $('.cat-' + currCat).css('display', 'none');
+        $('.cat-' + temp).css('display', 'table-row');
+        currCat = temp;
+    };
+
+    onCategoryChange();
+</script>
+}

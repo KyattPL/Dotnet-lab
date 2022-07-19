@@ -1,0 +1,15 @@
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\bin\Debug\net6.0\LinqExamples.exe
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\bin\Debug\net6.0\LinqExamples.deps.json
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\bin\Debug\net6.0\LinqExamples.runtimeconfig.json
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\bin\Debug\net6.0\LinqExamples.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\bin\Debug\net6.0\ref\LinqExamples.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\bin\Debug\net6.0\LinqExamples.pdb
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.csproj.AssemblyReference.cache
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.AssemblyInfoInputs.cache
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.AssemblyInfo.cs
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.csproj.CoreCompileInputs.cache
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\ref\LinqExamples.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.pdb
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab08\LinqExamples\obj\Debug\net6.0\LinqExamples.genruntimeconfig.cache

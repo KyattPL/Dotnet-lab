@@ -1,0 +1,15 @@
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\bin\Debug\net6.0\zad2.exe
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\bin\Debug\net6.0\zad2.deps.json
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\bin\Debug\net6.0\zad2.runtimeconfig.json
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\bin\Debug\net6.0\zad2.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\bin\Debug\net6.0\ref\zad2.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\bin\Debug\net6.0\zad2.pdb
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.csproj.AssemblyReference.cache
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.AssemblyInfoInputs.cache
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.AssemblyInfo.cs
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.csproj.CoreCompileInputs.cache
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\ref\zad2.dll
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.pdb
+C:\Users\siema\Desktop\uczelnia\dotnet\lab\lab05\zad2\obj\Debug\net6.0\zad2.genruntimeconfig.cache

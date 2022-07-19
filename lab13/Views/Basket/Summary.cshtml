@@ -1,0 +1,37 @@
+﻿@model lab10.Models.CustomerInfo
+@using System.Globalization;
+
+@{
+    ViewData["Title"] = "Summary";
+    int index = 0;
+}
+
+<h2>Your order has been placed!</h2>
+
+<h3>Given details:</h3>
+<table class="table">
+    <tr class="table">
+        <td>First name:</td>
+        <td>@ViewBag.FirstName</td>
+    </tr>
+    <tr class="table">
+        <td>Last name:</td>
+        <td>@ViewBag.LastName</td>
+    </tr>
+    <tr class="table">
+        <td>Address 1:</td>
+        <td>@ViewBag.FirstAddress</td>
+    </tr>
+    <tr class="table">
+        <td>Address 2:</td>
+        <td>@ViewBag.SecondAddress</td>
+    </tr>
+    <tr class="table">
+        <td>Phone number:</td>
+        <td>@ViewBag.PhoneNumber</td>
+    </tr>
+    <tr class="table">
+        <td>Payment method:</td>
+        <td>@ViewBag.PaymentMethod</td>
+    </tr>
+</table>
